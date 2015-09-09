@@ -37,7 +37,7 @@ public class HttpRequestClient {
 	private static Header[] defaultHeaders = new BasicHeader[] {
 			new BasicHeader("Accept-Language", "zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3"),
 			new BasicHeader("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"),
-			 new BasicHeader("Accept-Encoding", "gzip, deflate"),
+			new BasicHeader("Accept-Encoding", "gzip, deflate"),
 			new BasicHeader("User-Agent",
 					"Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.64 Safari/537.31") };
 

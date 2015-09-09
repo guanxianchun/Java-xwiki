@@ -54,9 +54,17 @@ public class XWikiThread extends Thread{
 				hander.postEdit(postURI, edituri, keyValues);
 				Thread.sleep(sleepTime);
 			}
-			hander.Logout();
+			
 		} catch (Exception e) {
 			e.printStackTrace();
+		}finally{
+			if (hander != null) {
+				try {
+					hander.Logout();
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
 		}
 	}
 
